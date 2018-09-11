@@ -107,7 +107,9 @@ for f in $(find ./etc/ -type f|sed 's/^.//');do
 done
 if [ $dryrun -eq 0 ];then
   mkdir -p /etc/puppetlabs/code/environments/production/files/
-  chown -R puppet /etc/puppetlabs/code/environments/production/files/*
+  if [ $isserver -eq 1 ];then
+    chown -R puppet /etc/puppetlabs/code/environments/production/files/*
+  fi
 fi
 
 if [ $onlyfile -eq 0 ];then
