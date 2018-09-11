@@ -90,11 +90,10 @@ if [ $onlyfile -eq 0 ];then
     else
       yum install -y puppet-agent
     fi
-    export PATH=/opt/puppetlabs/bin:$PATH
     yum install -y git
     yum install -y ruby
     gem i librarian-puppet
-    librarian=$(gem environment|grep "EXECUTABLE DIRECTORY"|cut -d' ' -f6)/librarian-puppet
+    export PATH=/opt/puppetlabs/bin:$(gem environment|grep "EXECUTABLE DIRECTORY"|cut -d' ' -f6):$PATH
   fi
 fi
 
@@ -120,9 +119,9 @@ if [ $onlyfile -eq 0 ];then
   if [ $dryrun -ne 1 ];then
     cd /etc/puppetlabs/code/environments/production
     [[ -v HOME ]] || export HOME=/root
-    ${librarian} clean
+    librarian clean
     rm -rf modules .tmp Puppetfile.lock
-    ${librarian} install
+    librarian install
     cd "$curdir"
   fi
 fi
