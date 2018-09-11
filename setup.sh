@@ -91,6 +91,7 @@ if [ $onlyfile -eq 0 ];then
       yum install -y puppet-agent
     fi
     export PATH=/opt/puppetlabs/bin:$PATH
+    yum install -y git
     yum install -y ruby
     gem i librarian-puppet
     librarian=$(gem environment|grep "EXECUTABLE DIRECTORY"|cut -d' ' -f6)/librarian-puppet
