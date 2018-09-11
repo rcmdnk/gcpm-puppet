@@ -119,6 +119,7 @@ if [ $onlyfile -eq 0 ];then
   echo
   if [ $dryrun -ne 1 ];then
     cd /etc/puppetlabs/code/environments/production
+    [[ -v HOME ]] || export HOME=/root
     ${librarian} clean
     rm -rf modules .tmp Puppetfile.lock
     ${librarian} install
