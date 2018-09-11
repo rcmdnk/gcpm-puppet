@@ -1,0 +1,29 @@
+---
+classes:
+  - htcondor
+
+# common parameters
+htcondor::admin_email: 'FIXME_ADMIN'
+htcondor::request_memory: false
+htcondor::enable_condor_reporting: false
+htcondor::uses_connection_broker: true
+
+## hosts
+htcondor::managers:
+  - FIXME_HOST
+
+htcondor::schedulers:
+  - FIXME_HOST
+
+htcondor::workers: []
+
+htcondor::uid_domain: 'FIXME_DOMAIN'
+htcondor::default_domain_name: 'FIXME_DOMAIN'
+
+## auth
+htcondor::pool_password: 'puppet:///files/pool_password'
+htcondor::condor_user: condor
+
+## Repositories
+htcondor::install_repositories: true
+htcondor::dev_repositories: false
