@@ -23,8 +23,6 @@ htcondor::proportional_swap_assignment: true
 
 htcondor::uid_domain: "FIXME_DOMAIN"
 htcondor::default_domain_name: "FIXME_DOMAIN"
-
-htcondor::service: false
 htcondor::admin_email: "FIXME_ADMIN"
 
 htcondor::managers:

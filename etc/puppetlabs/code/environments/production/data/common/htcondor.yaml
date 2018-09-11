@@ -27,3 +27,6 @@ htcondor::condor_user: condor
 ## Repositories
 htcondor::install_repositories: true
 htcondor::dev_repositories: false
+
+## Service should be enabled after settings are fixed
+htcondor::service: false
