@@ -3,5 +3,6 @@
 
 forge "https://forgeapi.puppetlabs.com"
 
+mod 'puppetlabs-accounts', '3.0.0'
 mod 'HEPPuppet-htcondor',
   :git => 'https://github.com/mickaneda/htcondor'

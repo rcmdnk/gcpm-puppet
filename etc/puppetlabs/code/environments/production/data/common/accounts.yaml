@@ -1,0 +1,7 @@
+---
+classes:
+  - accounts
+
+# condor test user
+accounts::user: 'condor_test'
+

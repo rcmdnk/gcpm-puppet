@@ -92,7 +92,7 @@ if [ $onlyfile -eq 0 ];then
     fi
     yum install -y git
     yum install -y ruby
-    gem i librarian-puppet
+    gem install librarian-puppet
     export PATH=/opt/puppetlabs/bin:$(gem environment|grep "EXECUTABLE DIRECTORY"|cut -d' ' -f6):$PATH
   fi
 fi
