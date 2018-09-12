@@ -9,7 +9,7 @@ hierarchy:
       - "roles/accounts_%{main_role}_%{sub_role}.yaml"
       - "roles/accounts_%{main_role}.yaml"
       - "common/accounts_%{sub_role}.yaml"
-      - "common/accounts_.yaml"
+      - "common/accounts.yaml"
   - name: "HTCondor"
     paths:
       - "roles/htcondor_%{main_role}_%{sub_role}.yaml"
