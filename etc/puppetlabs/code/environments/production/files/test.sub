@@ -1,8 +1,8 @@
 Universe   = vanilla
 Executable = test.sh
 ID      = $(Cluster).$(Process)
-Error   = log/err.$(ID)
-Output  = log/out.$(ID)
-Log     = log/log.$(ID)
+Error   = err.$(ID)
+Output  = out.$(ID)
+Log     = log.$(ID)
 request_cpus = 1
 queue

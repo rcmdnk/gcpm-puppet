@@ -1,8 +1,8 @@
 Universe   = vanilla
 Executable = test8.sh
 ID      = $(Cluster).$(Process)
-Error   = log/err.$(ID)
-Output  = log/out.$(ID)
-Log     = log/log.$(ID)
+Error   = err8.$(ID)
+Output  = out8.$(ID)
+Log     = log8.$(ID)
 request_cpus = 8
 queue
