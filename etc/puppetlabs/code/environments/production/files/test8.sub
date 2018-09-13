@@ -1,0 +1,8 @@
+executable              = test.sh
+log                     = test.log
+output                  = test.out
+error                   = test.err
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+request_cpus            = 8
+queue
