@@ -1,7 +1,7 @@
 ---
-classes:
-  - accounts
+classes: []
 
 # condor test user
-accounts::user: 'condor_test'
+accounts::user:
+  condor_test: {}
 

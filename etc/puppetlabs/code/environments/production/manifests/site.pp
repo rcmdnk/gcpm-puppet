@@ -12,3 +12,5 @@ node /^gcp-wn*/ {
   $sub_role = "gcp"
   lookup('classes', Array[String], 'unique').include
 }
+
+create_resources('accounts::user', lookup('accounts::users', {merge => hash}))
