@@ -1,6 +1,7 @@
 #!/bin/sh
 
-echo "dummy 8core job"
+date
+echo "8 cpus job"
 echo HOSTNAME: $(hostname -f)
 echo IP: $(hostname -i)
 echo sleep 60 sec...

@@ -1,7 +1,8 @@
-executable              = test.sh
-log                     = test.log
-output                  = test.out
-error                   = test.err
-should_transfer_files   = Yes
-when_to_transfer_output = ON_EXIT
+Universe   = vanilla
+Executable = test.sh
+ID      = $(Cluster).$(Process)
+Error   = log/err.$(ID)
+Output  = log/out.$(ID)
+Log     = log/log.$(ID)
+request_cpus = 1
 queue

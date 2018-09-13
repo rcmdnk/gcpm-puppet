@@ -16,3 +16,9 @@ hierarchy:
       - "roles/htcondor_%{main_role}.yaml"
       - "common/htcondor_%{sub_role}.yaml"
       - "common/htcondor.yaml"
+  - name: "files"
+    paths:
+      - "roles/files_%{main_role}_%{sub_role}.yaml"
+      - "roles/files_%{main_role}.yaml"
+      - "common/files_%{sub_role}.yaml"
+      - "common/files.yaml"
