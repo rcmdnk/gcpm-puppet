@@ -13,4 +13,4 @@ node /^gcp-wn*/ {
   lookup('classes', Array[String], 'unique').include
 }
 
-create_resources('accounts::user', lookup('accounts::users', {merge => hash}))
+#create_resources('accounts::user', lookup('accounts::user', {merge => hash}))
