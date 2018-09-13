@@ -7,19 +7,15 @@ files::files:
     path: "/home/condor_test/test.sh"
     source: "puppet:///files/test.sh"
     mode: "744"
-    exec: true
   test.sub:
     path: "/home/condor_test/test.sub"
     source: "puppet:///files/test.sub"
-    mode: "744"
-    exec: true
+    mode: "644"
   test8.sh:
     path: "/home/condor_test/test8.sh"
     source: "puppet:///files/test8.sh"
     mode: "744"
-    exec: true
   test8.sub:
     path: "/home/condor_test/test8.sub"
     source: "puppet:///files/test8.sub"
-    mode: "744"
-    exec: true
+    mode: "644"
