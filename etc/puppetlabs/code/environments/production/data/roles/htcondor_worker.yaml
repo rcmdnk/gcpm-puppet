@@ -1,4 +1,4 @@
-# Woerker
+# worker node
 htcondor::is_worker: true
 
 htcondor::manage_selinux: false
