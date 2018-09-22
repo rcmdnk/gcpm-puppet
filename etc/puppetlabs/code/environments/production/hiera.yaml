@@ -22,3 +22,9 @@ hierarchy:
       - "roles/files_%{main_role}.yaml"
       - "common/files_%{sub_role}.yaml"
       - "common/files.yaml"
+  - name: "google_fluentd"
+    paths:
+      - "roles/google_fluentd_%{main_role}_%{sub_role}.yaml"
+      - "roles/google_fluentd_%{main_role}.yaml"
+      - "common/google_fluentd_%{sub_role}.yaml"
+      - "common/google_fluentd.yaml"

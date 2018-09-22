@@ -8,3 +8,5 @@ mod 'HEPPuppet-htcondor',
   :git => 'https://github.com/mickaneda/htcondor'
 mod 'mickaneda-files',
   :git => 'https://github.com/mickaneda/puppet-files'
+mod 'mickaneda-google_fluentd',
+  :git => 'https://github.com/mickaneda/puppet-google_fluentd'
