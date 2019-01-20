@@ -1,14 +1,14 @@
 $main_role = ""
 $sub_role = ""
 
-node /^gcp-ce*/ {
-  $main_role = "manager"
+node /^gcp-.*ce*/ {
+  $main_role = "ce"
   $sub_role = "gcp"
   lookup('classes', Array[String], 'unique').include
 }
 
-node /^gcp-wn*/ {
-  $main_role = "worker"
+node /^gcp-.*wn*/ {
+  $main_role = "wn"
   $sub_role = "gcp"
   lookup('classes', Array[String], 'unique').include
 }

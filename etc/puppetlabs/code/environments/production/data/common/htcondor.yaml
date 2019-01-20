@@ -2,6 +2,9 @@
 classes:
   - htcondor
 
+# Primary Accounts
+htcondor::primary_accounts: ["condor_primary"]
+
 # common parameters
 htcondor::admin_email: 'FIXME_ADMIN'
 htcondor::request_memory: false
@@ -9,16 +12,7 @@ htcondor::enable_condor_reporting: false
 htcondor::uses_connection_broker: true
 
 ## hosts
-htcondor::managers:
-  - FIXME_HOST
-
-htcondor::schedulers:
-  - FIXME_HOST
-
 htcondor::workers: []
-
-htcondor::uid_domain: 'FIXME_DOMAIN'
-htcondor::default_domain_name: 'FIXME_DOMAIN'
 
 ## auth
 htcondor::pool_password: 'puppet:///files/pool_password'

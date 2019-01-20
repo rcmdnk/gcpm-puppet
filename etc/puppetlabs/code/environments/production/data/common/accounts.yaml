@@ -3,5 +3,6 @@ classes: []
 
 # condor test user
 accounts::user:
+  condor_primary: {}
   condor_test: {}
 

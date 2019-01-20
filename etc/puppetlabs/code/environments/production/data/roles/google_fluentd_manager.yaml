@@ -1,6 +1,0 @@
----
-classes:
-  - google_fluentd
-
-google_fluentd::conf_files:
-  - "puppet:///files/manager/fluentd/condor.conf"

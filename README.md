@@ -13,8 +13,8 @@ These puppet settings are for:
 
 ## HOSTNAME
 
-Manager's HOSTNAME should be `gcp-ce*`.
-Worker node template's HOSTNAME should be `gcp-wn*`.
+Manager's HOSTNAME should be `gcp-*ce*`.
+Worker node template's HOSTNAME should be `gcp-*wn*`.
 
 If you want to use different names, modify **./etc/puppetlabs/code/environments/production/manifests/site.pp**.
 
