@@ -1,0 +1,34 @@
+# worker node
+htcondor::is_worker: true
+
+htcondor::manage_selinux: false
+htcondor::enable_cgroup: true
+htcondor::pool_home: "/home"
+htcondor::partitionable_slots: false
+htcondor::job_renice_increment: 0
+htcondor::start: "(RequestCpus == FIXME_CORE) && (FIXME_START)"
+htcondor::machine_owner: "FIXME_OWNER"
+htcondor::number_of_cpus: "FIXME_CORE"
+htcondor::memory: "FIXME_MEM"
+
+htcondor::slots:
+  1:
+    type: "cpus=FIXME_CORE,mem=FIXME_MEM,swap=99%,disk=99%"
+    num: "1"
+    partitionable: "FALSE"
+
+htcondor::mount_under_scratch_dirs: []
+htcondor::use_pid_namespaces: true
+htcondor::proportional_swap_assignment: true
+
+htcondor::uid_domain: "FIXME_DOMAIN"
+htcondor::default_domain_name: "FIXME_DOMAIN"
+htcondor::admin_email: "FIXME_ADMIN"
+
+htcondor::managers:
+  - "FIXME_HOST"
+
+htcondor::schedulers:
+  - "FIXME_HOST"
+
+htcondor::private_network_name: 'FIXME_PRIVATE_DOMAIN'

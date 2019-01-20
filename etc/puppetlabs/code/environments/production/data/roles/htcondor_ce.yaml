@@ -1,0 +1,28 @@
+# Resource limits (if the machine is preemptible, the max time is limited up to 24 hours)
+htcondor::max_walltime: '168 * 60 * 60'
+htcondor::max_cputime: '336 * 60 * 60'
+
+## hosts
+htcondor::managers:
+  - '%{fqdn}'
+
+htcondor::schedulers:
+  - '%{fqdn}'
+
+htcondor::uid_domain: '%{domain}'
+htcondor::default_domain_name: '%{domain}'
+
+# Scheduler
+htcondor::is_scheduler: true
+
+# Manager
+htcondor::is_manager: true
+htcondor::collector_name: "GCPM Manager"
+
+# security
+htcondor::include_username_in_accounting: true
+htcondor::private_network_name: '${fqdn}'
+
+# WNS is updated by gcpm
+htcondor::persistent_config: true
+htcondor::settable_attrs_administrator: 'WNS'
