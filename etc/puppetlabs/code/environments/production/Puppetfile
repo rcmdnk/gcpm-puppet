@@ -3,7 +3,7 @@
 
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'puppetlabs-accounts', '7.3.0'
+mod 'puppetlabs-accounts', '7.3.1'
 mod 'HEPPuppet-htcondor',
   :git => 'https://github.com/mickaneda/htcondor'
 mod 'mickaneda-files',
